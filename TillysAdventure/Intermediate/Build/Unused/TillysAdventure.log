@@ -1,0 +1,14 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build.
+  Creating makefile for TillysAdventureEditor (ini files are newer than UBTMakefile)
+  Performing 7 actions (4 in parallel)
+  SharedPCH.Engine.cpp
+  TillysAdventure.init.gen.cpp
+  TillysAdventureGameModeBase.gen.cpp
+  TillysAdventureGameModeBase.cpp
+  TillysAdventure.cpp
+  [6/7] Link UE4Editor-TillysAdventure.dll
+  [7/7] Link UE4Editor-TillysAdventure.lib
+     Creating library D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-TillysAdventure.lib and object D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-TillysAdventure.exp
+     Creating library D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-TillysAdventure.suppressed.lib and object D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-TillysAdventure.suppressed.exp
+  Deploying TillysAdventureEditor Win64 Development...
+  Total build time: 37.73 seconds (Local executor: 27.46 seconds)
