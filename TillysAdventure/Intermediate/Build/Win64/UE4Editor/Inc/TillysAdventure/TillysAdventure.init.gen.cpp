@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeTillysAdventure_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/TillysAdventure",
 				PKG_CompiledIn | 0x00000000,
-				0x99D11E84,
-				0x600DE543,
+				0xCAF42CD0,
+				0xAE98E43D,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};

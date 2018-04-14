@@ -1,46 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<ItemGroup>
-		<None Include="..\..\TillysAdventure.uproject" />
-		<Filter Include="Source">
-			<UniqueIdentifier>{78AC7A4A-87E5-4D6C-8F5B-B09E8F0D4769}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Source\TillysAdventure.Target.cs">
-			<Filter>Source</Filter>
-		</None >
-		<None Include="..\..\Source\TillysAdventureEditor.Target.cs">
-			<Filter>Source</Filter>
-		</None >
-		<Filter Include="Config">
-			<UniqueIdentifier>{0B528CF3-5B66-4E8F-9969-DCAA35A098B3}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Config\DefaultEditor.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultEngine.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultGame.ini">
-			<Filter>Config</Filter>
-		</None >
-		<Filter Include="Source\TillysAdventure">
-			<UniqueIdentifier>{2F256406-1ADD-4CB6-9B35-35499E61E0D4}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Source\TillysAdventure\TillysAdventure.Build.cs">
-			<Filter>Source\TillysAdventure</Filter>
-		</None >
-		<ClCompile Include="..\..\Source\TillysAdventure\TillysAdventure.cpp">
-			<Filter>Source\TillysAdventure</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TillysAdventure\TillysAdventure.h">
-			<Filter>Source\TillysAdventure</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\TillysAdventure\TillysAdventureGameModeBase.cpp">
-			<Filter>Source\TillysAdventure</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TillysAdventure\TillysAdventureGameModeBase.h">
-			<Filter>Source\TillysAdventure</Filter>
-		</ClInclude >
-	</ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\TillysAdventure.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{78AC7A4A-87E5-4D6C-8F5B-B09E8F0D4769}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TillysAdventure.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TillysAdventureEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{0B528CF3-5B66-4E8F-9969-DCAA35A098B3}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\TillysAdventure">
+      <UniqueIdentifier>{2F256406-1ADD-4CB6-9B35-35499E61E0D4}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TillysAdventure\TillysAdventure.Build.cs">
+      <Filter>Source\TillysAdventure</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\TillysAdventure\TillysAdventure.cpp">
+      <Filter>Source\TillysAdventure</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TillysAdventure\TillysAdventure.h">
+      <Filter>Source\TillysAdventure</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TillysAdventure\TillysAdventureGameModeBase.cpp">
+      <Filter>Source\TillysAdventure</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TillysAdventure\TillysAdventureGameModeBase.h">
+      <Filter>Source\TillysAdventure</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source\TillysAdventure\Pawns">
+      <UniqueIdentifier>{af90176a-d965-428b-b7a2-717d0844b673}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPawn.h">
+      <Filter>Source\TillysAdventure\Pawns</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPawn.cpp">
+      <Filter>Source\TillysAdventure\Pawns</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
