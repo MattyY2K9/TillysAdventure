@@ -1,14 +1,4 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Creating makefile for TillysAdventureEditor (ini files are newer than UBTMakefile)
-  Parsing headers for TillysAdventureEditor
-    Running UnrealHeaderTool "D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\TillysAdventure.uproject" "D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\TillysAdventureEditor\Development\TillysAdventureEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for TillysAdventureEditor in 8.8601294 seconds
-  Performing 4 actions (4 in parallel)
-  TillyCharacter.gen.cpp
-  TillyCharacter.cpp
-  [3/4] Link UE4Editor-TillysAdventure.dll
-  [4/4] Link UE4Editor-TillysAdventure.lib
-     Creating library D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-TillysAdventure.lib and object D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-TillysAdventure.exp
-     Creating library D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-TillysAdventure.suppressed.lib and object D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-TillysAdventure.suppressed.exp
+  Target is up to date
   Deploying TillysAdventureEditor Win64 Development...
-  Total build time: 22.76 seconds (Local executor: 3.02 seconds)
+  Total build time: 3.09 seconds (NoActionsToExecute executor: 0.00 seconds)
