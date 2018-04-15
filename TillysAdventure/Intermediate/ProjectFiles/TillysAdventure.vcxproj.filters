@@ -35,25 +35,46 @@
     <ClInclude Include="..\..\Source\TillysAdventure\TillysAdventure.h">
       <Filter>Source\TillysAdventure</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\TillysAdventure\TillysAdventureGameModeBase.cpp">
-      <Filter>Source\TillysAdventure</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\TillysAdventure\TillysAdventureGameModeBase.h">
-      <Filter>Source\TillysAdventure</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source\TillysAdventure\Pawns">
       <UniqueIdentifier>{af90176a-d965-428b-b7a2-717d0844b673}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\TillysAdventure\PlayerControllers">
+      <UniqueIdentifier>{3c0f4824-ac2a-4b77-a6ee-d06e59d54482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\TillysAdventure\PlayerStates">
+      <UniqueIdentifier>{f57203b1-fe73-4f41-b523-89d68d18f763}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\TillysAdventure\GameModes">
+      <UniqueIdentifier>{0646c903-2637-49b4-84bd-1d7550900d51}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPawn.h">
+    <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPlayerState.h">
+      <Filter>Source\TillysAdventure\PlayerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPlayerController.h">
+      <Filter>Source\TillysAdventure\PlayerControllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TillysAdventure\TillysAdventureGameModeBase.h">
+      <Filter>Source\TillysAdventure\GameModes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyCharacter.h">
       <Filter>Source\TillysAdventure\Pawns</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPawn.cpp">
+    <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPlayerState.cpp">
+      <Filter>Source\TillysAdventure\PlayerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPlayerController.cpp">
+      <Filter>Source\TillysAdventure\PlayerControllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TillysAdventure\TillysAdventureGameModeBase.cpp">
+      <Filter>Source\TillysAdventure\GameModes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyCharacter.cpp">
       <Filter>Source\TillysAdventure\Pawns</Filter>
     </ClCompile>
   </ItemGroup>

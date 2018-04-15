@@ -7,10 +7,14 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "D:\Program files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
-"D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\TillysAdventure\TillyPawn.cpp.obj"
+"D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\TillysAdventure\TillyCharacter.cpp.obj"
+"D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\TillysAdventure\TillyPlayerController.cpp.obj"
+"D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\TillysAdventure\TillyPlayerState.cpp.obj"
 "D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\TillysAdventure\TillysAdventure.cpp.obj"
 "D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\TillysAdventure\TillysAdventureGameModeBase.cpp.obj"
-"D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\TillysAdventure\TillyPawn.gen.cpp.obj"
+"D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\TillysAdventure\TillyCharacter.gen.cpp.obj"
+"D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\TillysAdventure\TillyPlayerController.gen.cpp.obj"
+"D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\TillysAdventure\TillyPlayerState.gen.cpp.obj"
 "D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\TillysAdventure\TillysAdventure.init.gen.cpp.obj"
 "D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\TillysAdventure\TillysAdventureGameModeBase.gen.cpp.obj"
 "D:\Program files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\TillysAdventure\PCLaunch.rc.res"
