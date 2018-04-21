@@ -42,6 +42,21 @@ void EmptyLinkFunctionForGeneratedCodeTillyPlayerController() {}
 			};
 #endif
 #if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CameraFOVChangeRate_MetaData[] = {
+				{ "Category", "Camera" },
+				{ "ModuleRelativePath", "TillyPlayerController.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_CameraFOVChangeRate = { UE4CodeGen_Private::EPropertyClass::Float, "CameraFOVChangeRate", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000005, 1, nullptr, STRUCT_OFFSET(ATillyPlayerController, CameraFOVChangeRate), METADATA_PARAMS(NewProp_CameraFOVChangeRate_MetaData, ARRAY_COUNT(NewProp_CameraFOVChangeRate_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CameraDefaultFOV_MetaData[] = {
+				{ "Category", "Camera" },
+				{ "ModuleRelativePath", "TillyPlayerController.h" },
+				{ "ToolTip", "Camera" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_CameraDefaultFOV = { UE4CodeGen_Private::EPropertyClass::Float, "CameraDefaultFOV", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000005, 1, nullptr, STRUCT_OFFSET(ATillyPlayerController, CameraDefaultFOV), METADATA_PARAMS(NewProp_CameraDefaultFOV_MetaData, ARRAY_COUNT(NewProp_CameraDefaultFOV_MetaData)) };
+#if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LookYSensitivity_MetaData[] = {
 				{ "Category", "Movement" },
 				{ "ModuleRelativePath", "TillyPlayerController.h" },
@@ -52,6 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeTillyPlayerController() {}
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LookXSensitivity_MetaData[] = {
 				{ "Category", "Movement" },
 				{ "ModuleRelativePath", "TillyPlayerController.h" },
+				{ "ToolTip", "Sensitivity" },
 			};
 #endif
 			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_LookXSensitivity = { UE4CodeGen_Private::EPropertyClass::Float, "LookXSensitivity", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000005, 1, nullptr, STRUCT_OFFSET(ATillyPlayerController, LookXSensitivity), METADATA_PARAMS(NewProp_LookXSensitivity_MetaData, ARRAY_COUNT(NewProp_LookXSensitivity_MetaData)) };
@@ -66,13 +82,36 @@ void EmptyLinkFunctionForGeneratedCodeTillyPlayerController() {}
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_JumpHeight_MetaData[] = {
 				{ "Category", "Movement" },
 				{ "ModuleRelativePath", "TillyPlayerController.h" },
+				{ "ToolTip", "Jumping" },
 			};
 #endif
 			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_JumpHeight = { UE4CodeGen_Private::EPropertyClass::Float, "JumpHeight", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000005, 1, nullptr, STRUCT_OFFSET(ATillyPlayerController, JumpHeight), METADATA_PARAMS(NewProp_JumpHeight_MetaData, ARRAY_COUNT(NewProp_JumpHeight_MetaData)) };
 #if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SprintCameraFOV_MetaData[] = {
+				{ "Category", "Movement" },
+				{ "ModuleRelativePath", "TillyPlayerController.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SprintCameraFOV = { UE4CodeGen_Private::EPropertyClass::Float, "SprintCameraFOV", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000005, 1, nullptr, STRUCT_OFFSET(ATillyPlayerController, SprintCameraFOV), METADATA_PARAMS(NewProp_SprintCameraFOV_MetaData, ARRAY_COUNT(NewProp_SprintCameraFOV_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SprintMinimumRecoveryTime_MetaData[] = {
+				{ "Category", "Movement" },
+				{ "ModuleRelativePath", "TillyPlayerController.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SprintMinimumRecoveryTime = { UE4CodeGen_Private::EPropertyClass::Float, "SprintMinimumRecoveryTime", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000005, 1, nullptr, STRUCT_OFFSET(ATillyPlayerController, SprintMinimumRecoveryTime), METADATA_PARAMS(NewProp_SprintMinimumRecoveryTime_MetaData, ARRAY_COUNT(NewProp_SprintMinimumRecoveryTime_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SprintDuration_MetaData[] = {
+				{ "Category", "Movement" },
+				{ "ModuleRelativePath", "TillyPlayerController.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SprintDuration = { UE4CodeGen_Private::EPropertyClass::Float, "SprintDuration", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000005, 1, nullptr, STRUCT_OFFSET(ATillyPlayerController, SprintDuration), METADATA_PARAMS(NewProp_SprintDuration_MetaData, ARRAY_COUNT(NewProp_SprintDuration_MetaData)) };
+#if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SprintSpeed_MetaData[] = {
 				{ "Category", "Movement" },
 				{ "ModuleRelativePath", "TillyPlayerController.h" },
+				{ "ToolTip", "Sprinting" },
 			};
 #endif
 			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_SprintSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "SprintSpeed", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000005, 1, nullptr, STRUCT_OFFSET(ATillyPlayerController, SprintSpeed), METADATA_PARAMS(NewProp_SprintSpeed_MetaData, ARRAY_COUNT(NewProp_SprintSpeed_MetaData)) };
@@ -85,10 +124,15 @@ void EmptyLinkFunctionForGeneratedCodeTillyPlayerController() {}
 #endif
 			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MaximumSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "MaximumSpeed", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000005, 1, nullptr, STRUCT_OFFSET(ATillyPlayerController, MaximumSpeed), METADATA_PARAMS(NewProp_MaximumSpeed_MetaData, ARRAY_COUNT(NewProp_MaximumSpeed_MetaData)) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_CameraFOVChangeRate,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_CameraDefaultFOV,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_LookYSensitivity,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_LookXSensitivity,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_GravityStrength,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_JumpHeight,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_SprintCameraFOV,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_SprintMinimumRecoveryTime,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_SprintDuration,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_SprintSpeed,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MaximumSpeed,
 			};
@@ -110,7 +154,7 @@ void EmptyLinkFunctionForGeneratedCodeTillyPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATillyPlayerController, 367627677);
+	IMPLEMENT_CLASS(ATillyPlayerController, 686607989);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ATillyPlayerController(Z_Construct_UClass_ATillyPlayerController, &ATillyPlayerController::StaticClass, TEXT("/Script/TillysAdventure"), TEXT("ATillyPlayerController"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ATillyPlayerController);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

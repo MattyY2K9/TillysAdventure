@@ -27,9 +27,22 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 private:
-	// All private variables
+	// Our Player Controller
 	class ATillyPlayerController * OurPlayerController;
 
+	// Our Camera
+	class UCameraComponent* OurCamera;
+
+	float CameraTargetFOV;
+private:
+	// Sprinting
+	void SprintRecovery(float DeltaTime);
+
+	// Sprint Variables
+	float SprintTimer;
+
+	bool bSprinting;
+	
 public:
 	// Movement Functions
 	void MoveForward(float ForwardValue);
@@ -38,4 +51,11 @@ public:
 	// Looking Functions
 	void LookUp(float LookValue);
 	void LookAround(float LookValue);
+
+	// Sprint Functions
+	void SprintStart();
+	void SprintEnd();
+
+	// CameraFunctions
+	void CameraUpdate(float DeltaTime);
 };

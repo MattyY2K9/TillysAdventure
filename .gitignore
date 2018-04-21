@@ -112,6 +112,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+Saved/Backup/*
 
 *.VC.db
 *.CrashReportClient.ini
