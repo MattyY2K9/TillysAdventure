@@ -26,11 +26,15 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	// Override the landed function
+	virtual void Landed(const FHitResult& Hit) override;
 private:
 	// Our Player Controller
 	class ATillyPlayerController * OurPlayerController;
-
+	
+public:
 	// Our Camera
+	UPROPERTY(EditAnywhere, BluePrintReadWrite)
 	class UCameraComponent* OurCamera;
 
 	float CameraTargetFOV;

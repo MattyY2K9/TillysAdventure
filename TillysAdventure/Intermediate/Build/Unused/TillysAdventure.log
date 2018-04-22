@@ -6,4 +6,4 @@
      Creating library D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-TillysAdventure.lib and object D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-TillysAdventure.exp
      Creating library D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-TillysAdventure.suppressed.lib and object D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-TillysAdventure.suppressed.exp
   Deploying TillysAdventureEditor Win64 Development...
-  Total build time: 3.25 seconds (Local executor: 1.52 seconds)
+  Total build time: 51.62 seconds (Local executor: 48.46 seconds)
