@@ -67,11 +67,6 @@ void ATillyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 void ATillyCharacter::Landed(const FHitResult & Hit)
 {
 	Super::Landed(Hit);
-
-	FLatentActionInfo latentInfo;
-	latentInfo.CallbackTarget = OurPlayerController;
-
-	OurPlayerController->PlayDynamicForceFeedback(0.3f, 0.15f, false, true, true, false, EDynamicForceFeedbackAction::Start, latentInfo);
 }
 
 void ATillyCharacter::SprintRecovery(float DeltaTime)
