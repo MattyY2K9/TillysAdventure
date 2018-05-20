@@ -118,3 +118,5 @@ TillysAdventure\Saved\
 *.CrashReportClient.ini
 TillysAdventure/Saved/Autosaves/Game/Models/Needle/NeedleTexture_Auto1.uasset
 TillysAdventure/Saved/AutoScreenshot.png
+
+TillysAdventure/*
