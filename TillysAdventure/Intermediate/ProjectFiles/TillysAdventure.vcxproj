@@ -416,10 +416,12 @@
     <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyCharacter.cpp" />
     <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPlayerController.cpp" />
     <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPlayerState.cpp" />
+    <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyWeaponProjectile.cpp" />
     <ClCompile Include="..\..\Source\TillysAdventure\TillysAdventure.cpp" />
     <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyCharacter.h" />
     <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPlayerController.h" />
     <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPlayerState.h" />
+    <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyWeaponProjectile.h" />
     <ClInclude Include="..\..\Source\TillysAdventure\TillysAdventure.h" />
     <ClCompile Include="..\..\Source\TillysAdventure\TillysAdventureGameModeBase.cpp" />
     <ClInclude Include="..\..\Source\TillysAdventure\TillysAdventureGameModeBase.h" />

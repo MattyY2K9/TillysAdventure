@@ -49,6 +49,9 @@
     <Filter Include="Source\TillysAdventure\GameModes">
       <UniqueIdentifier>{0646c903-2637-49b4-84bd-1d7550900d51}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\TillysAdventure\Projectiles">
+      <UniqueIdentifier>{c4ea9556-b7fa-4035-aac8-9f8f52a97dda}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPlayerState.h">
@@ -63,6 +66,9 @@
     <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyCharacter.h">
       <Filter>Source\TillysAdventure\Pawns</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyWeaponProjectile.h">
+      <Filter>Source\TillysAdventure\Projectiles</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPlayerState.cpp">
@@ -76,6 +82,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyCharacter.cpp">
       <Filter>Source\TillysAdventure\Pawns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyWeaponProjectile.cpp">
+      <Filter>Source\TillysAdventure\Projectiles</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

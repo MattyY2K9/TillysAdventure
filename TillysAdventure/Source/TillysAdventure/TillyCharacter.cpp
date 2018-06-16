@@ -4,6 +4,7 @@
 #include "TillyPlayerController.h"
 #include "Camera/CameraComponent.h"
 #include "Engine/World.h"
+#include "TillyWeaponProjectile.h"
 
 // Sets default values
 ATillyCharacter::ATillyCharacter()
@@ -62,6 +63,9 @@ void ATillyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	// Sprinting
 	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &ATillyCharacter::SprintStart);
 	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &ATillyCharacter::SprintEnd);
+
+	// Fire
+	PlayerInputComponent->BindAction("FirePrimary", IE_Released, this, &ATillyCharacter::FirePrimary);
 }
 
 void ATillyCharacter::Landed(const FHitResult & Hit)
@@ -172,4 +176,49 @@ void ATillyCharacter::CameraUpdate(float DeltaTime)
 			OurCamera->FieldOfView += OurPlayerController->CameraFOVChangeRate * DeltaTime;
 		}
 	}
+}
+
+void ATillyCharacter::FirePrimary()
+{
+	// try and fire a projectile
+	if (WeaponProjectile != NULL)
+	{
+		UWorld* const World = GetWorld();
+		if (World != NULL)
+		{
+			const FRotator SpawnRotation = GetControlRotation();
+			// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+			const FVector SpawnLocation = GetActorLocation() + SpawnRotation.RotateVector(WeaponSpawnOffset);
+
+			//Set Spawn Collision Handling Override
+			FActorSpawnParameters ActorSpawnParams;
+			ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
+
+			// spawn the projectile at the muzzle
+			ATillyWeaponProjectile* Projectile = World->SpawnActor<ATillyWeaponProjectile>(WeaponProjectile, SpawnLocation, SpawnRotation, ActorSpawnParams);
+			
+			// Add velocity to it
+			if (Projectile)
+			{
+				Projectile->FireInDirection(SpawnLocation);
+			}
+		}
+	}
+
+	//// try and play the sound if specified
+	//if (FireSound != NULL)
+	//{
+	//	UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+	//}
+
+	//// try and play a firing animation if specified
+	//if (FireAnimation != NULL)
+	//{
+	//	// Get the animation object for the arms mesh
+	//	UAnimInstance* AnimInstance = Mesh1P->GetAnimInstance();
+	//	if (AnimInstance != NULL)
+	//	{
+	//		AnimInstance->Montage_Play(FireAnimation, 1.f);
+	//	}
+	//}
 }

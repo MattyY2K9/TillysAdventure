@@ -48,6 +48,15 @@ private:
 	bool bSprinting;
 	
 public:
+	// Weapon Projectile
+	UPROPERTY(EditDefaultsOnly, Category = Projectile)
+	TSubclassOf<class ATillyWeaponProjectile> WeaponProjectile;
+
+	// Weapon offset
+	UPROPERTY(EditDefaultsOnly, Category = Projectile)
+	FVector WeaponSpawnOffset;
+
+public:
 	// Movement Functions
 	void MoveForward(float ForwardValue);
 	void Strafe(float StrafeValue);
@@ -60,6 +69,9 @@ public:
 	void SprintStart();
 	void SprintEnd();
 
-	// CameraFunctions
+	// Camera Functions
 	void CameraUpdate(float DeltaTime);
+
+	// Combat Functions
+	void FirePrimary();
 };
