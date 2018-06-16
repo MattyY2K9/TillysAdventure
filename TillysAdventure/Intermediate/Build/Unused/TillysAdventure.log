@@ -1,9 +1,4 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Performing 3 actions (4 in parallel)
-  TillyWeaponProjectile.cpp
-  [2/3] Link UE4Editor-TillysAdventure.dll
-  [3/3] Link UE4Editor-TillysAdventure.lib
-     Creating library D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-TillysAdventure.lib and object D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-TillysAdventure.exp
-     Creating library D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-TillysAdventure.suppressed.lib and object D:\Users\Matthew\Documents\Tilly's Unreal Adventure\TillysAdventure\TillysAdventure\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-TillysAdventure.suppressed.exp
+  Target is up to date
   Deploying TillysAdventureEditor Win64 Development...
-  Total build time: 2.17 seconds (Local executor: 1.33 seconds)
+  Total build time: 0.84 seconds (NoActionsToExecute executor: 0.00 seconds)

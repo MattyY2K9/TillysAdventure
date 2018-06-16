@@ -112,11 +112,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-TillysAdventure\Saved\
+TillysAdventure/Saved*
 
 *.VC.db
 *.CrashReportClient.ini
 TillysAdventure/Saved/Autosaves/Game/Models/Needle/NeedleTexture_Auto1.uasset
 TillysAdventure/Saved/AutoScreenshot.png
-
-TillysAdventure/*
