@@ -65,12 +65,16 @@ void ATillyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &ATillyCharacter::SprintEnd);
 
 	// Fire
-	PlayerInputComponent->BindAction("FirePrimary", IE_Released, this, &ATillyCharacter::FirePrimary);
+	PlayerInputComponent->BindAction("FirePrimary", IE_Pressed, this, &ATillyCharacter::FirePrimary);
 }
 
 void ATillyCharacter::Landed(const FHitResult & Hit)
 {
 	Super::Landed(Hit);
+}
+
+void ATillyCharacter::Death()
+{
 }
 
 void ATillyCharacter::SprintRecovery(float DeltaTime)
@@ -200,6 +204,7 @@ void ATillyCharacter::FirePrimary()
 			// Add velocity to it
 			if (Projectile)
 			{
+				Projectile->SetOwner(this);
 				Projectile->FireInDirection(SpawnLocation);
 			}
 		}

@@ -413,11 +413,15 @@
     <None Include="..\..\Config\DefaultEngine.ini" />
     <None Include="..\..\Config\DefaultGame.ini" />
     <None Include="..\..\Source\TillysAdventure\TillysAdventure.Build.cs" />
+    <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TABaseAIPawn.cpp" />
+    <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TAPawn.cpp" />
     <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyCharacter.cpp" />
     <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPlayerController.cpp" />
     <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPlayerState.cpp" />
     <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyWeaponProjectile.cpp" />
     <ClCompile Include="..\..\Source\TillysAdventure\TillysAdventure.cpp" />
+    <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TABaseAIPawn.h" />
+    <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TAPawn.h" />
     <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyCharacter.h" />
     <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPlayerController.h" />
     <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPlayerState.h" />

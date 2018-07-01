@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeTillyCharacter() {}
 // Cross Module References
 	TILLYSADVENTURE_API UClass* Z_Construct_UClass_ATillyCharacter_NoRegister();
 	TILLYSADVENTURE_API UClass* Z_Construct_UClass_ATillyCharacter();
-	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+	TILLYSADVENTURE_API UClass* Z_Construct_UClass_ATAPawn();
 	UPackage* Z_Construct_UPackage__Script_TillysAdventure();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
@@ -35,7 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeTillyCharacter() {}
 		if (!OuterClass)
 		{
 			static UObject* (*const DependentSingletons[])() = {
-				(UObject* (*)())Z_Construct_UClass_ACharacter,
+				(UObject* (*)())Z_Construct_UClass_ATAPawn,
 				(UObject* (*)())Z_Construct_UPackage__Script_TillysAdventure,
 			};
 #if WITH_METADATA
@@ -93,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeTillyCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATillyCharacter, 3896984298);
+	IMPLEMENT_CLASS(ATillyCharacter, 1132494483);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ATillyCharacter(Z_Construct_UClass_ATillyCharacter, &ATillyCharacter::StaticClass, TEXT("/Script/TillysAdventure"), TEXT("ATillyCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ATillyCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

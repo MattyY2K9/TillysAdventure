@@ -13,29 +13,29 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TILLYSADVENTURE_TillyCharacter_generated_h
 
-#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_RPC_WRAPPERS
-#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_INCLASS_NO_PURE_DECLS \
+#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_RPC_WRAPPERS
+#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATillyCharacter(); \
 	friend TILLYSADVENTURE_API class UClass* Z_Construct_UClass_ATillyCharacter(); \
 public: \
-	DECLARE_CLASS(ATillyCharacter, ACharacter, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/TillysAdventure"), NO_API) \
+	DECLARE_CLASS(ATillyCharacter, ATAPawn, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/TillysAdventure"), NO_API) \
 	DECLARE_SERIALIZER(ATillyCharacter) \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_INCLASS \
+#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_INCLASS \
 private: \
 	static void StaticRegisterNativesATillyCharacter(); \
 	friend TILLYSADVENTURE_API class UClass* Z_Construct_UClass_ATillyCharacter(); \
 public: \
-	DECLARE_CLASS(ATillyCharacter, ACharacter, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/TillysAdventure"), NO_API) \
+	DECLARE_CLASS(ATillyCharacter, ATAPawn, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/TillysAdventure"), NO_API) \
 	DECLARE_SERIALIZER(ATillyCharacter) \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_STANDARD_CONSTRUCTORS \
+#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATillyCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATillyCharacter) \
@@ -48,7 +48,7 @@ private: \
 public:
 
 
-#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_ENHANCED_CONSTRUCTORS \
+#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ATillyCharacter(ATillyCharacter&&); \
@@ -59,26 +59,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATillyCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ATillyCharacter)
 
 
-#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_PRIVATE_PROPERTY_OFFSET
-#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_9_PROLOG
-#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_GENERATED_BODY_LEGACY \
+#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_PRIVATE_PROPERTY_OFFSET
+#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_10_PROLOG
+#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_RPC_WRAPPERS \
-	TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_INCLASS \
-	TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_STANDARD_CONSTRUCTORS \
+	TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_PRIVATE_PROPERTY_OFFSET \
+	TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_RPC_WRAPPERS \
+	TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_INCLASS \
+	TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_GENERATED_BODY \
+#define TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_INCLASS_NO_PURE_DECLS \
-	TillysAdventure_Source_TillysAdventure_TillyCharacter_h_12_ENHANCED_CONSTRUCTORS \
+	TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_PRIVATE_PROPERTY_OFFSET \
+	TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_INCLASS_NO_PURE_DECLS \
+	TillysAdventure_Source_TillysAdventure_TillyCharacter_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

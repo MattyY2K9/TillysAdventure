@@ -2,6 +2,9 @@
 
 #include "TillyWeaponProjectile.h"
 
+// Collision actor
+#include "TAPawn.h"
+
 // For physics reactions
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/SphereComponent.h"
@@ -14,6 +17,7 @@ ATillyWeaponProjectile::ATillyWeaponProjectile()
 	CollisionComp->InitSphereRadius(0.1f);
 	CollisionComp->BodyInstance.SetCollisionProfileName("Projectile");
 	CollisionComp->OnComponentHit.AddDynamic(this, &ATillyWeaponProjectile::OnHit);		// set up a notification for when this component hits something blocking
+	CollisionComp->OnComponentBeginOverlap.AddDynamic(this, &ATillyWeaponProjectile::BeginOverlap);
 
 																						// Players can't walk on it
 	CollisionComp->SetWalkableSlopeOverride(FWalkableSlopeOverride(WalkableSlope_Unwalkable, 0.f));
@@ -47,15 +51,35 @@ void ATillyWeaponProjectile::Tick(float DeltaTime)
 void ATillyWeaponProjectile::OnHit(UPrimitiveComponent * HitComp, AActor * OtherActor, UPrimitiveComponent * OtherComp, FVector NormalImpulse, const FHitResult & Hit)
 {
 	// Only add impulse and destroy projectile if we hit a physics
-	if ((OtherActor != NULL) && (OtherActor != this) && (OtherComp != NULL) && OtherComp->IsSimulatingPhysics())
+	if ((OtherActor != NULL) && (OtherActor != this) && (OtherActor != GetOwner()))
 	{
-		OtherComp->AddImpulseAtLocation(GetVelocity() * 100.0f, GetActorLocation());
+		// Do we need to simulate physics on the colliding object
+		if ((OtherComp != NULL) && OtherComp->IsSimulatingPhysics())
+		{
+			OtherComp->AddImpulseAtLocation(GetVelocity() * 100.0f, GetActorLocation());
+		}
 
 		Destroy();
 	}
 }
 
-#pragma optimize("", off)
+void ATillyWeaponProjectile::BeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult )
+{
+	// Have we hit a Tilly Pawn
+	if ((OtherActor != NULL) && (OtherActor != this) && (OtherActor != GetOwner()))
+	{
+		// Have we hit ATPawn?
+		ATAPawn* HitTillyPawn = Cast<ATAPawn>(OtherActor);
+
+		if (HitTillyPawn)
+		{
+			HitTillyPawn->TakeBulletDamage(DamageToDeal);
+		}
+
+		Destroy();
+	}
+}
+
 void ATillyWeaponProjectile::FireInDirection(FVector FireDirection)
 {
 	ProjectileMovementComponent->SetVelocityInLocalSpace(FireDirection.GetSafeNormal() * ProjectileMovementComponent->InitialSpeed);

@@ -10,14 +10,28 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UPrimitiveComponent;
 class AActor;
-struct FVector;
 struct FHitResult;
+struct FVector;
 #ifdef TILLYSADVENTURE_TillyWeaponProjectile_generated_h
 #error "TillyWeaponProjectile.generated.h already included, missing '#pragma once' in TillyWeaponProjectile.h"
 #endif
 #define TILLYSADVENTURE_TillyWeaponProjectile_generated_h
 
 #define TillysAdventure_Source_TillysAdventure_TillyWeaponProjectile_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execBeginOverlap) \
+	{ \
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComp); \
+		P_GET_OBJECT(AActor,Z_Param_Other); \
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OtherComp); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_OtherBodyIndex); \
+		P_GET_UBOOL(Z_Param_bFromSweep); \
+		P_GET_STRUCT_REF(FHitResult,Z_Param_Out_SweepResult); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BeginOverlap(Z_Param_OverlappedComp,Z_Param_Other,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execOnHit) \
 	{ \
@@ -34,6 +48,20 @@ struct FHitResult;
 
 
 #define TillysAdventure_Source_TillysAdventure_TillyWeaponProjectile_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execBeginOverlap) \
+	{ \
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComp); \
+		P_GET_OBJECT(AActor,Z_Param_Other); \
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OtherComp); \
+		P_GET_PROPERTY(UIntProperty,Z_Param_OtherBodyIndex); \
+		P_GET_UBOOL(Z_Param_bFromSweep); \
+		P_GET_STRUCT_REF(FHitResult,Z_Param_Out_SweepResult); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->BeginOverlap(Z_Param_OverlappedComp,Z_Param_Other,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execOnHit) \
 	{ \

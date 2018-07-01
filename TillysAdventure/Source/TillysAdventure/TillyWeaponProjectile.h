@@ -28,9 +28,14 @@ public:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
 	// Called when projectile hits something
 	UFUNCTION()
 	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+
+	// Called when projectile hits something
+	UFUNCTION()
+	void BeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* Other, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult );
 
 	// Fire the projectile
 	void FireInDirection(FVector FireDirection);

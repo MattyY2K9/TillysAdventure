@@ -69,6 +69,12 @@
     <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyWeaponProjectile.h">
       <Filter>Source\TillysAdventure\Projectiles</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TAPawn.h">
+      <Filter>Source\TillysAdventure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TABaseAIPawn.h">
+      <Filter>Source\TillysAdventure</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyPlayerState.cpp">
@@ -85,6 +91,12 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TillyWeaponProjectile.cpp">
       <Filter>Source\TillysAdventure\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TAPawn.cpp">
+      <Filter>Source\TillysAdventure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Tilly%27s Unreal Adventure\TillysAdventure\TillysAdventure\Source\TillysAdventure\TABaseAIPawn.cpp">
+      <Filter>Source\TillysAdventure</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

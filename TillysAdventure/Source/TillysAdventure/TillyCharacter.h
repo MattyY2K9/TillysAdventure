@@ -2,12 +2,13 @@
 
 #pragma once
 
+#include "TAPawn.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "TillyCharacter.generated.h"
 
 UCLASS()
-class TILLYSADVENTURE_API ATillyCharacter : public ACharacter
+class TILLYSADVENTURE_API ATillyCharacter : public ATAPawn
 {
 	GENERATED_BODY()
 
@@ -28,6 +29,10 @@ public:
 
 	// Override the landed function
 	virtual void Landed(const FHitResult& Hit) override;
+
+	// Handle Death
+	virtual void Death() override;
+
 private:
 	// Our Player Controller
 	class ATillyPlayerController * OurPlayerController;
